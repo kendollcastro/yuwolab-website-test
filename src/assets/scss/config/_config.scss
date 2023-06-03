@@ -34,4 +34,6 @@ body {
 .content-heading {
   display: flex; 
   column-gap: 8px;
+  font-family: $primary-font;
+  align-items: center;
 }

@@ -1,0 +1,84 @@
+.schedule {
+  background-color: $secondary-color;
+  padding: 56px 0;
+
+  &-content {
+    padding: 0 16px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    
+    @include from(s_tablet) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      width: 100%;
+
+      @include from(s_tablet) {
+        width: 40%;
+      }
+    }
+    
+    &__info--heading {
+      color: #fff;
+    }
+    
+    &__info--steps {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      position: relative;
+
+      &-item {
+        display: flex;
+        font-family: $primary-font;
+        align-items: center;
+        column-gap: 8px;
+        z-index: 2;
+
+        span {
+          background-color: #fff;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 600px;
+          color: #fff;
+        }
+
+        &--line {
+          width: 2px;
+          background-color: #fff;
+          height: 100px;
+          position: absolute;
+          top: 20px;
+          left: 15px;
+          z-index: 1;
+        }
+      }
+    }
+
+    &__img {
+      width: 100%;
+
+      @include from(s_tablet) {
+        width: 50%;
+      }
+    }
+  }
+}
