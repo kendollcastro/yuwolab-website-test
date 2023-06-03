@@ -1,0 +1,76 @@
+.mobile-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: $primary-text-color;
+  background-color: $eighth-color;
+  border-top: 6px solid $ninth-color;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  z-index: 100;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-size: 10px;
+
+    img {
+      margin-bottom: 8px;
+    }
+
+    &-casino {
+      width: 27px;
+      height: 27px;
+    }
+
+    &-casinogames {
+      width: 32px;
+      height: 27px;
+    }
+
+    &-bingo {
+      width: 23px;
+      height: 26px;
+    }
+
+    &-promo {
+      width: 26px;
+      height: 27px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__login {
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 0;
+  }
+}
+
+@include from(l_tablet) {
+  .hidden-mobile {
+    display: none;
+  }
+}

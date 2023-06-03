@@ -1,0 +1,158 @@
+.primary-button {
+  // width: 250px;
+  color: $secondary-color;
+  display: flex;
+  padding: 14px 16px;
+  font-weight: 600;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 16px;
+  column-gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.1s ease-in;
+  border: 1.5px solid $secondary-color;
+  border-radius: 8px;
+
+  &__first {
+    background-color: $primary-color;
+  }
+
+  &__second {
+    background-color: $secondary-color;
+    max-width: fit-content;
+    color: $primary-color;
+    padding: 14px 40px;
+    border: 1.5px solid $secondary-color;
+
+    @include from(s_desktop) {
+
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__register {
+    background-color: $third-color;
+    border: 2px solid $fifth-color;
+    max-width: 228px;
+    font-weight: bold;
+    font-size: 21px;
+
+    @include from(s_desktop) {
+      font-size: 36px;
+      padding: 8px 80px;
+      width: 100%;
+      max-width: 300px;
+
+      &:hover {
+        background-color: $eighteenth-color;
+      }
+    }
+  }
+
+  &__games {
+    background-color: $third-color;
+    border: 1px solid $fifth-color;
+    color: $fifteenth-color;
+    max-width: 228px;
+    font-weight: bold;
+    font-size: 18px;
+
+    @include from(s_desktop) {
+      font-size: 28px;
+      padding: 8px 80px;
+      width: 100%;
+      max-width: fit-content;
+
+      &:hover {
+        background-color: $eighteenth-color;
+        color: $primary-text-color;
+      }
+    }
+  }
+}
+
+.secondary-button {
+  color: $secondary-text-color;
+  display: flex;
+  padding: 4px 8px;
+  font-weight: bold;
+  border-radius: 17px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: 0.1s ease-in;
+  font-size: 11px;
+  width: 78px;
+
+  @media (min-width: 600px) {
+    font-size: 9px;
+  }
+
+  &__betslip {
+    background-color: $bg-fourth-color;
+    border: none;
+
+    @include from(s_desktop) {
+      font-size: 15px;
+      padding: 5px 8px;
+      width: fit-content;
+
+      &:hover {
+        background-color: $eighteenth-color;
+        color: $seventh-color;
+      }
+    }
+  }
+
+  &__register {
+    background-color: $ninth-color;
+
+    @include from(s_desktop) {
+      font-size: 15px;
+      padding: 5px 8px;
+
+      &:hover {
+        background-color: $seventh-color;
+        color: $primary-text-color;
+      }
+    }
+  }
+
+  &__login {
+    background-color: $bg-fourth-color;
+    border: 1px solid $seventeenth-color;
+    width: 100%;
+    color: $primary-text-color;
+    font-size: 14px;
+
+    @include from(s_desktop) {
+      font-size: 28px;
+    }
+
+    &:hover {
+      background-color: $seventh-color;
+    }
+  }
+
+  &__register-secondary {
+    background-color: $eighteenth-color;
+    color: $primary-text-color;
+    width: 235px;
+    margin-right: 0;
+    border: 1px solid $fifth-color;
+    font-size: 14px;
+    margin-top: 13px;
+
+    @include from(s_desktop) {
+      width: 382px;
+      font-size: 28px;
+    }
+  }
+}

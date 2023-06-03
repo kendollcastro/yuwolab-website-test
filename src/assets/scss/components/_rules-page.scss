@@ -1,0 +1,79 @@
+.rules-page {
+  background-color: $sixteenth-color;
+  color: $primary-text-color;
+  margin: 1rem 1rem;
+  padding: 1rem;
+
+  @include from(m_desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__heading {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: $fifteenth-color;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: $fifteenth-color;
+  }
+
+  &__paragraph {
+    margin-bottom: 18px;
+  }
+
+  &__anchor {
+    color: $seventeenth-color;
+    text-decoration: none;
+  }
+}
+
+.rules-page__list {
+  &-item {
+    margin-bottom: 8px;
+  }
+}
+
+.rules-page__sublist {
+  padding-left: 1rem;
+
+  li {
+    margin-bottom: 16px;
+  }
+
+  &-item {
+    margin-bottom: 20px;
+  }
+}
+
+.rules-page__table {
+  border: 1px solid #c0c0c0;
+  border-collapse: colapso;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: 100%;
+
+  @include from(m_tablet) {
+    max-width: 60%;
+  }
+}
+
+.rules-page__table th {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  text-align: center;
+  color: $eighteenth-color;
+}
+
+.rules-page__table td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  text-align: center;
+}

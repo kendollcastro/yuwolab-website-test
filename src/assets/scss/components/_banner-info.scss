@@ -1,0 +1,69 @@
+.banner-info {
+  background-color: $thirteenth-color;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 100%;
+  }
+
+  &__content {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-methods {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 27px;
+      margin-bottom: 34px;
+
+      img:nth-child(1) {
+        width: 105px;
+        height: 34px;
+      }
+
+      img:nth-child(2) {
+        width: 44px;
+        height: 34px;
+      }
+    }
+
+    &-garantee {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 40px;
+      margin-bottom: 24px;
+
+      img:nth-child(1) {
+        width: 57px;
+        height: 53px;
+      }
+
+      img:nth-child(2) {
+        width: 124px;
+        height: 58px;
+      }
+
+      img:nth-child(3) {
+        width: 55px;
+        height: 52px;
+      }
+    }
+
+    &-social {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 27px;
+
+      img {
+        width: 29px;
+        height: 29px;
+      }
+    }
+  }
+}

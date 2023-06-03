@@ -1,0 +1,155 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: $sixteenth-color;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  width: 250px;
+
+  @include from(s_desktop) {
+    max-width: 731px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: normal;
+    background-color: $sixteenth-color;
+    width: 274px;
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+    padding: 12px 8px;
+    text-transform: capitalize;
+
+    @include from(s_desktop) {
+      max-width: 755px;
+      width: 100%;
+      padding-top: 24px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 23px;
+      text-transform: uppercase;
+      color: $primary-text-color;
+
+      @include from(s_desktop) {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.close-button {
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: $primary-text-color;
+  margin-left: 35px;
+
+  @include from(s_desktop) {
+    margin-left: 255px;
+  }
+}
+
+.login__form {
+  text-align: start;
+
+  @include from(s_desktop) {
+    width: 400px;
+  }
+
+  &--label {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    color: $primary-text-color;
+    margin-bottom: 8px;
+
+    @include from(s_desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &--input {
+    display: block;
+    width: 94%;
+    margin-bottom: 16px;
+    padding: 10px 8px;
+    border: none;
+    outline: 1px solid $seventeenth-color;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: normal;
+    color: $primary-text-color;
+    background-color: transparent;
+
+    @include from(s_desktop) {
+      font-size: 18px;
+    }
+  }
+}
+
+.login__btns-login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-button {
+  width: 250px;
+  color: $primary-text-color;
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.1s ease-in;
+  border: none;
+}
+
+.login__link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  a {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include from(s_desktop) {
+      font-size: 21px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+$primary-color    : #FFFFFF;
+$secondary-color  : #061F29;
+$third-color      : #1E3842;
+$fouth-color      : #356375;
+$fifth-color      : #44BE75;
+$sixth-color      : #85CAA1;
+$seventh-color    : #328C56;
+$eighth-color     : #B3D8C2;
+$ninth-color      : #91A12D;
+$tenth-color      : #C1D43C;
+$eleventh-color   : #CFDB7F;
+$twelfth-color    : #C74204;
+$thirteenth-color : #F95106;
+$fourteenth-color : #FB8650;
+$fifteenth-color  : #FBBA9B;
+$sixteenth-color  : #5C246A;
+$seventeenth-color: #F7C544;
+$eighteenth-color : #FE9600;
+$nineteenth-color : #880E4A;
+
+$bg-main-color    : $primary-color;
+$bg-second-color  : $fifteenth-color;
+$bg-third-color   : $tenth-color;
+$bg-fourth-color  : $seventh-color;
+$bg-fifth-color   : $eleventh-color;
+
+/* Text Colors */
+$primary-text-color   :  $sixth-color;
+$secondary-text-color :  $fifth-color;
+$third-text-color     :  $third-color;
+$fourth-text-color    :  $secondary-color;
+$fifth-text-color     :  $eighth-color;
+
+
+/* Buttons styles */
+$primary-btn-bg   : $secondary-color;
+$seconday-btn-bg  : $eighth-color;
+
+/* Font Family */
+$primary-font     : 'Montserrat', sans-serif;
+$secondary-font   : 'Sarabun', sans-serif;
+
+/* Font Sizes */
+
+/* H1 */
+$h1-mobile  : 36px;
+$h1-tablet  : 42px;
+$h1-desktop : 60px; 
+
+/* H2 */
+$h2-desktop : 36px;
+$h2-mobile  : 32px; 
+
+/* H4 */ 
+$h4-desktop : 20px;
+$h4-mobile  : 20px;
+
+/* Paragraph */
+$primary-paragraph: 18px; 
+$secondary-paragraph: 24px;
+
+/* Subtitle */
+$subtitle-mobile  : 25px;
+$subttitle-desktop: 50px;
+
+/* Breakpoints */
+$breakpoints:
+(
+  s_phone   : 0,
+  m_phone   : 425px,
+  xs_tablet : 670px,
+  s_tablet  : 744px,
+  m_tablet  : 834px,
+  l_tablet  : 940px,
+  s_desktop : 1024px,
+  l_desktop : 1100px,
+  m_desktop : 1440px
+);
+

@@ -1,0 +1,126 @@
+.services {
+  padding: 56px 0;
+
+  &-content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  &-content__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @include from(s_desktop) {
+      align-items: center;
+    }
+
+    &--heading {
+      display: flex;
+      justify-content: center;
+      column-gap: 8px;
+
+      h2 {
+        font-size: $h2-mobile;
+        font-family: $primary-font;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+
+    &--cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 16px;
+      column-gap: 16px;
+      max-width: 1088px;
+      width: 100%;
+      justify-items: center;
+
+      @include from(s_tablet) {
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+      }
+    }
+
+    &--card {
+      position: relative;
+      width: 358px;
+      height: 165px;
+
+      @include from(m_tablet) {
+        width: 100%;
+      }
+    }
+
+    &--card-info {
+      border: 2px solid #000;
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      padding: 16px;
+      border-radius: 8px 16px 8px 18px;
+      width: 85%;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 16px;
+      }
+
+      h4 {
+        margin-bottom: 8px;
+        font-size: $h4-mobile;
+        font-family: $primary-font;
+        font-weight: 550;
+      }
+
+      p {
+        font-family: $secondary-font;
+        font-size: 16px;
+      }
+    }
+
+    &--card-double {
+      position: absolute;
+      border: 2px solid #000;
+      border-radius: 8px 16px 8px 18px;
+      background-color: $fifth-color;
+      width: 93%;
+      height: 130px;
+      z-index: -1;
+      top: -8px;
+      left: 12px;
+
+      @include from(s_tablet) {
+        width: 91%;
+      }
+      
+      @include from(s_desktop) {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.services-content__info--card:nth-child(1) {
+
+  .services-content__info--card-double {
+    background-color: $thirteenth-color;
+  }
+}
+
+.services-content__info--card:nth-child(2) {
+
+  .services-content__info--card-double {
+    background-color: $thirteenth-color;
+  }
+}

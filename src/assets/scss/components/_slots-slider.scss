@@ -1,0 +1,182 @@
+.slot-slider {
+  margin-bottom: 48px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &__slider {
+    @include from(m_tablet) {
+      display: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    &-heading {
+      color: $third-text-color;
+    }
+
+    &-anchor {
+      color: $third-text-color;
+      text-transform: capitalize;
+      text-decoration: underline;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    border-radius: 18px;
+    width: 95%;
+    text-align: center;
+    position: relative;
+    height: 141px;
+    overflow: hidden;
+    cursor: pointer;
+
+    @include from(m_phone) {
+      height: 170px;
+    }
+
+    @include from(l_tablet) {
+      height: 155px;
+    }
+
+    @include from(m_desktop) {
+      height: 175px;
+    }
+
+    &-info {
+      position: absolute;
+      box-sizing: border-box;
+      background-color: $nineteenth-color;
+      border-radius: 0 0 18px 18px;
+      width: 100%;
+      height: 65px;
+      bottom: -2px;
+
+      @include from(m_tablet) {
+        width: 102%;
+      }
+
+      &--img {
+        width: 82px;
+        height: 24px;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      border: 2px solid $nineteenth-color;
+      border-radius: 20px;
+
+      img {
+        width: 137px;
+        height: 150px;
+        border-radius: 18px;
+        display: block;
+        transition: transform 0.3s ease;
+
+        @include from(m_phone) {
+          width: 172px;
+          height: 167px;
+        }
+
+        @media (min-width: 400px) {
+          width: 146px;
+          height: 150px;
+        }
+
+        @media (min-width: 480px) {
+          width: 188px;
+          height: 177px;
+        }
+
+        @include from(xs_tablet) {
+          width: 192px;
+          height: 170px;
+        }
+
+        @include from(m_tablet) {
+          width: 151px;
+          height: 140px;
+        }
+
+        @include from(l_tablet) {
+          width: 170px;
+          height: 140px;
+        }
+
+        @include from(s_desktop) {
+          width: 183px;
+          height: 145px;
+        }
+
+        @include from(l_desktop) {
+          width: 220px;
+          height: 170px;
+        }
+      }
+
+      @include from(s_desktop) {
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &--heading {
+      color: $fifth-color;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-top: 6px;
+      height: 30px;
+      line-height: 13px;
+
+      @include from(s_tablet) {
+        font-size: 18px;
+      }
+    }
+
+    &--caption {
+      color: $primary-text-color;
+      font-size: 11px;
+
+      @include from(s_tablet) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -24px;
+
+    @include from(s_desktop) {
+      display: none;
+    }
+  }
+}
+
+.slot-slider__arrows button svg path {
+  fill: $seventh-color;
+}
+
+.slot-slider__grid {
+  display: none;
+
+  @include from(m_tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
